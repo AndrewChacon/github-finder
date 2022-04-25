@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Spinner from '../layout/Spinner';
 
 function UserResults() {
 	useEffect(() => {
@@ -28,7 +29,7 @@ function UserResults() {
 			</div>
 		);
 	} else {
-		return <h3>loading...</h3>;
+		return <Spinner />;
 	}
 }
 
